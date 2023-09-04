@@ -1,0 +1,40 @@
+.navbar-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+.container-wrapper{
+  margin: 0 auto;
+  padding-inline:6 ;
+  width: 94%;
+  border:1px soplid green;
+}
+.navbar-container{
+  margin: 0 auto;
+
+  width: 98%;
+  border: 1px solid blue;
+}
+.navbar-middel-wrapper{
+display: flex;
+border: 1px solid red;
+width: 50%;
+justify-content: center;
+gap: 100px;
+}
+.navbar-left-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
+  border: 1px solid red;
+  gap: 30px;
+}
+.navleft-list-wrapper{
+  display: flex;
+}
+.profile-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
