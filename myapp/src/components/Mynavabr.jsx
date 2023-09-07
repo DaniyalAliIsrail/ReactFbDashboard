@@ -16,39 +16,44 @@ const Mynavbar = () => {
     <>
       <div className="navbar-container">
         <div className="navbar-wrapper ">
-          <div>
-            <div>
-              <a>
-                <BsFacebook />
-              </a>
-              <span>
-                <input type="text" placeholder="search" />
+          <div className="navbar-right-wrapper">
+            <div className="right-wrapper">
+              <span className="fb-logo">
+                <a>
+                  <BsFacebook />
+                </a>
+              </span>
+              <span className="search-bar">
+                <input className="input-bar" type="text" placeholder="Search" />
               </span>
             </div>
           </div>
 
           <div className="navbar-middel-wrapper">
             <div>
-              <AiFillHome />
+              <a><AiFillHome /></a>
             </div>
             <div>
-              <BsCaretRightSquareFill />
+              <a><BsCaretRightSquareFill /></a>
             </div>
             <div>
-              <BiStore />
+              <a><BiStore /></a>
             </div>
             <div>
-              <BsPeopleFill />
+              <a><BsPeopleFill /></a>
             </div>
-            <div>
-              <TbBoxModel2Off />
-            </div>
+
           </div>
 
           <div className="navbar-left-wrapper">
             <div className="profile-wrapper">
-              <img src={PROFILEIMAGE} style={{ width: "30px" , height:"25px" , objectFit:"cover"  }}></img>
-              <span>
+              <span className="profile-img">
+              <img
+                src={PROFILEIMAGE}
+                style={{ width: "40px", height: "40px", objectFit: "cover" , borderRadius:"50px"}}
+              ></img>
+              </span>
+              <span style={{paddingTop:"6px"}}>
                 <a>Daniyal ali</a>
               </span>
             </div>
@@ -67,7 +72,6 @@ const Mynavbar = () => {
                 <BsFillCaretDownFill />
               </div>
             </div>
-
           </div>
         </div>
       </div>

@@ -1,40 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #3a3b3c;
+}
+
+:root{
+  --white:#ffffff;
+}
 .navbar-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+.navbar-right-wrapper{
+  width: 30%;
 }
 .container-wrapper{
   margin: 0 auto;
   padding-inline:6 ;
   width: 94%;
-  border:1px soplid green;
+  /* border:1px soplid green; */
 }
 .navbar-container{
   margin: 0 auto;
-
-  width: 98%;
-  border: 1px solid blue;
+  width: 95%;
+  padding: 10px 0;
+  /* border: 1px solid blue; */
 }
+.right-wrapper{
+  /* width: 120%; */
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  
+  
+}
+.fb-logo{
+font-size: 2.1rem;
+color: var(--white);
+}
+.search-bar{
+  width: 100%;
+  color: var(--white);
+
+}
+.input-bar{
+  width: 16vw;
+  padding: 3.7% ;
+  margin: 2px;
+  border-radius: 24px;
+  outline: none;
+  border: 2px solid ;
+  color: var(--white);
+  font-size: 16px;
+
+ 
+}
+
 .navbar-middel-wrapper{
 display: flex;
-border: 1px solid red;
-width: 50%;
+/* border: 1px solid rgb(38, 255, 0); */
+width: 40%;
 justify-content: center;
 gap: 100px;
 }
+.navbar-middel-wrapper>div>a{
+  font-size: 26px;
+  color:var(--white);
+}
 .navbar-left-wrapper{
   display: flex;
-  justify-content: flex-start;
-  width: 25%;
-  border: 1px solid red;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  /* border: 1px solid red; */
   gap: 30px;
-}
-.navleft-list-wrapper{
-  display: flex;
 }
 .profile-wrapper{
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  align-content: center;
+  gap: 20px;
+  width: 160px; 
+  color: var(--white);
+  /* border: 1px solid burlywood; */
+}
+.profile-img{
+  /* border: 1px solid red; */
+  border-radius: 50px;
+  /* border: 1px solid white; */
+  object-fit: cover;
+}
+.profile-wrapper>span>a{
+  font-size: 1.2rem;
+  /* border: 1px solid red; */
+}
+.navleft-list-wrapper{
+  display: flex;
+  justify-content:space-around;
+  gap: 12px;
+  /* border: 1px solid rgb(0, 174, 255); */
+  width: 190px;
+}
+.navleft-list-wrapper>div{ 
+ font-size: 25px; 
+ color:var(--white);
 }
